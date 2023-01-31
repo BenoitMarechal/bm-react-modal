@@ -58,11 +58,27 @@ const BmModal = (props) => {
         </button>
       </div>
 
-      <p className='modal-message-text'>
+      {props.messageText ? (
+        <p className='modal-message-text'>{props.messageText}</p>
+      ) : (
+        <div className='modal-message-text'>
+          <p>
+            Customize your message with messageText property <br></br>
+            <a
+              className='sample-link'
+              href='https://www.npmjs.com/package/bm-react-modal'
+            >
+              Documentation available here
+            </a>
+          </p>
+        </div>
+      )}
+      {/* <p className='modal-message-text'>
         {props.messageText
           ? props.messageText
-          : 'Customize your message with messageText property'}
-      </p>
+          : 'Customize your message with messageText property'
+          }
+      </p> */}
     </div>
   );
 
