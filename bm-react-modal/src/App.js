@@ -1,5 +1,5 @@
 import './App.css';
-
+import BmModal from '../src/lib/components/BmModal';
 function App() {
   return (
     <div className='App'>
@@ -7,6 +7,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <BmModal></BmModal>
         <a
           className='App-link'
           href='https://reactjs.org'
