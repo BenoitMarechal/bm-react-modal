@@ -39,10 +39,8 @@ then
 
 - Here's a list of the props that can be customised so far:
 
-# headLineText (headline text)
+* headLineText (headline text)
 
-# messageText (message text)
-
-#
+* messageText (message text)
 
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for
