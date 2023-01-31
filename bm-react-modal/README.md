@@ -12,13 +12,13 @@ bm react-modal is an easy, fully customizable modal component for React. It was 
 
 - in a React file (App or any other React component), import the modal by adding the following line at the top of the file):
 
-### 'import { BmModal } from 'bm-react-modal;'
+### `import { BmModal } from 'bm-react-modal`;
 
 (Don't forget the curly braces!)
 
 - Place the modal button wherever you want it to be (mind the wrapping):
 
-### '<BmModal></BmModal>'
+### `<BmModal></BmModal>`
 
 - The button should appear in you react app or page, and clicking on it should make the modal pop!
 
