@@ -13,7 +13,10 @@ const BmModal = (props) => {
   //declare modal openning function
   function openFunction(e) {
     console.log(e);
-    e.preventDefault();
+    if (e !== undefined) {
+      e.preventDefault();
+    }
+
     if (props.beforeOpenFunction) {
       props.beforeCloseFunction();
     }
@@ -25,8 +28,10 @@ const BmModal = (props) => {
 
   //declare modal closing function
   function closeFunction(e) {
-    console.log(e);
-    e.preventDefault();
+    if (e !== undefined) {
+      e.preventDefault();
+    }
+
     if (props.beforeCloseFunction) {
       props.beforeCloseFunction();
     }
