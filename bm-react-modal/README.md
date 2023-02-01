@@ -56,6 +56,10 @@ then
 - ` bodyBackGround (body' background color)`
 - ` textColor (text color)`
 
+#### Others
+
+- `openBtnClass (add one or several classes of your choice to the openning button, so you can pass classes from tailwind for example)`
+
 #### Functions
 
 - ` beforeOpenFunction (function to be executed before the modal opens)`

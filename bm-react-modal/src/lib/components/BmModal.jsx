@@ -12,7 +12,6 @@ const BmModal = (props) => {
   }
   //declare modal openning function
   function openFunction(e) {
-    console.log(e);
     if (e !== undefined) {
       e.preventDefault();
     }
@@ -95,7 +94,16 @@ const BmModal = (props) => {
   let finalProps = { ...defaultProps, ...props };
   return (
     <div className='react-simple-modal-container'>
-      <button onClick={finalProps.openFunction}>{finalProps.btnText}</button>
+      <button
+        className={
+          props.openBtnClass
+            ? props.openBtnClass + ' bm-react-modal-open-btn '
+            : ' bm-react-modal-open-btn '
+        }
+        onClick={finalProps.openFunction}
+      >
+        {finalProps.btnText}
+      </button>
       {finalProps.open ? (
         <BmModalStructure {...finalProps}></BmModalStructure>
       ) : (

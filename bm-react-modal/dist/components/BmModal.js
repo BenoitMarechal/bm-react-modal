@@ -24,7 +24,7 @@ function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefine
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var BmModal = function BmModal(props) {
   //declare openning parameter
-  var _useState = (0, _react.useState)(false),
+  var _useState = (0, _react.useState)(props.open ? props.open : false),
     _useState2 = _slicedToArray(_useState, 2),
     modalOpen = _useState2[0],
     setModalOpen = _useState2[1];
@@ -34,8 +34,9 @@ var BmModal = function BmModal(props) {
   }
   //declare modal openning function
   function openFunction(e) {
-    console.log(e);
-    e.preventDefault();
+    if (e !== undefined) {
+      e.preventDefault();
+    }
     if (props.beforeOpenFunction) {
       props.beforeCloseFunction();
     }
@@ -47,8 +48,9 @@ var BmModal = function BmModal(props) {
 
   //declare modal closing function
   function closeFunction(e) {
-    console.log(e);
-    e.preventDefault();
+    if (e !== undefined) {
+      e.preventDefault();
+    }
     if (props.beforeCloseFunction) {
       props.beforeCloseFunction();
     }

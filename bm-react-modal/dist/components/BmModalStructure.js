@@ -17,7 +17,7 @@ var BmModalStructure = function BmModalStructure(props) {
   function handleKeyDown(e) {
     e.preventDefault();
     if (e.key === 'Escape' || e.key === 'Enter') {
-      props.closeFunction();
+      props.closeFunction(e);
     }
   }
   var bgStyle = {
