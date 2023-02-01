@@ -5,7 +5,7 @@ import './BmModal.css';
 
 const BmModal = (props) => {
   //declare openning parameter
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(props.open ? props.open : false);
   //declare modal toggle function
   function toggleModal() {
     setModalOpen(!modalOpen);
