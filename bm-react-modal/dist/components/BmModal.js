@@ -60,6 +60,9 @@ var BmModal = function BmModal(props) {
     closeFunction: closeFunction,
     openFunction: openFunction,
     afterClosefunction: props.afterCloseFunction ? props.afterCloseFunction : null,
+    afterOpenfunction: props.afterOpenfunction ? props.afterOpenfunction : null,
+    beforeClosefunction: props.beforeCloseFunction ? props.beforeCloseFunction : null,
+    beforeOpenfunction: props.beforeOpenfunction ? props.beforeOpenfunction : null,
     btnText: 'Open Modal',
     backGroundColor: 'rgba(84, 197, 222, 0.4)',
     bodyBackGround: 'blue',
@@ -74,9 +77,14 @@ var BmModal = function BmModal(props) {
   }, props.headLineText ? props.headLineText : 'Customize your headline with headLineText property'), /*#__PURE__*/_react.default.createElement("button", {
     className: "modal-btn",
     onClick: defaultProps.closeFunction
-  }, "Close ", /*#__PURE__*/_react.default.createElement("span", null, "\u2715"))), /*#__PURE__*/_react.default.createElement("p", {
+  }, "Close ", /*#__PURE__*/_react.default.createElement("span", null, "\u2715"))), props.messageText ? /*#__PURE__*/_react.default.createElement("p", {
     className: "modal-message-text"
-  }, props.messageText ? props.messageText : 'Customize your message with messageText property'));
+  }, props.messageText) : /*#__PURE__*/_react.default.createElement("div", {
+    className: "modal-message-text"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "Customize your message with messageText property ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("a", {
+    className: "sample-link",
+    href: "https://www.npmjs.com/package/bm-react-modal"
+  }, "Documentation available here"))));
   var finalProps = _objectSpread(_objectSpread({}, defaultProps), props);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "react-simple-modal-container"

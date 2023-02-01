@@ -74,4 +74,4 @@ Other custom props that will require a little more work include:
 - ` open (boolen that controls wether the modal is open or closed)`
 - `openFunction (Function that opens the modal, a composed by a sequence of beforeOpenFunction, toggling the`open` boolean, then afterOpenFunction)`
 - `closeFunction (Function that closes the modal, a composed by a sequence of beforeCloseFunction, toggling the`open` boolean, then afterCloseFunction)`
-- ` message (You can insert any block of html code to act as your modal's body. However, it needs to contain at least one tabable element, which will generally be your own closing button.
+- ` message (You can insert any block of html code to act as your modal's body. However, it needs to contain at least one tabable element, which will generally be your own closing button.`

@@ -47,3 +47,10 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.sample-link,
+.sample-link:visited {
+  color: white;
+  margin-top: 15px;
+  font-weight: bold;
+}

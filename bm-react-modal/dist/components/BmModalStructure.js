@@ -4,7 +4,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _react = _interopRequireDefault(require("react"));
 var _focusTrapReact = _interopRequireDefault(require("focus-trap-react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
@@ -28,14 +27,14 @@ var BmModalStructure = function BmModalStructure(props) {
     color: props.textColor,
     background: props.bodyBackGround
   };
-  return /*#__PURE__*/_react.default.createElement(_focusTrapReact.default, {
+  return /*#__PURE__*/React.createElement(_focusTrapReact.default, {
     active: props.open
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: " modal-bg",
     tabIndex: "0",
     onKeyDown: handleKeyDown,
     style: _objectSpread(_objectSpread({}, bgStyle), props.bgStyle)
-  }, /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
     className: "modal-body modal-body-style",
     style: _objectSpread(_objectSpread({}, bodyStyle), props.bodyStyle)
   }, props.message)));
