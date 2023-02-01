@@ -11,7 +11,9 @@ const BmModal = (props) => {
     setModalOpen(!modalOpen);
   }
   //declare modal openning function
-  function openFunction() {
+  function openFunction(e) {
+    console.log(e);
+    e.preventDefault();
     if (props.beforeOpenFunction) {
       props.beforeCloseFunction();
     }
@@ -22,7 +24,9 @@ const BmModal = (props) => {
   }
 
   //declare modal closing function
-  function closeFunction() {
+  function closeFunction(e) {
+    console.log(e);
+    e.preventDefault();
     if (props.beforeCloseFunction) {
       props.beforeCloseFunction();
     }
@@ -37,15 +41,15 @@ const BmModal = (props) => {
     open: modalOpen,
     closeFunction: closeFunction,
     openFunction: openFunction,
-    afterClosefunction: props.afterCloseFunction
+    afterCloseFunction: props.afterCloseFunction
       ? props.afterCloseFunction
       : null,
-    afterOpenfunction: props.afterOpenfunction ? props.afterOpenfunction : null,
-    beforeClosefunction: props.beforeCloseFunction
+    afterOpenFunction: props.afterOpenFunction ? props.afterOpenFunction : null,
+    beforeCloseFunction: props.beforeCloseFunction
       ? props.beforeCloseFunction
       : null,
-    beforeOpenfunction: props.beforeOpenfunction
-      ? props.beforeOpenfunction
+    beforeOpenFunction: props.beforeOpenFunction
+      ? props.beforeOpenFunction
       : null,
     btnText: 'Open Modal',
     backGroundColor: 'rgba(84, 197, 222, 0.4)',
