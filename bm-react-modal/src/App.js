@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import BmModal from '../src/lib/components/BmModal';
 function App() {

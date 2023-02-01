@@ -1,3 +1,4 @@
+import React from 'react';
 import FocusTrap from 'focus-trap-react';
 
 const BmModalStructure = (props) => {
