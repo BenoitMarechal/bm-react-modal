@@ -36,7 +36,7 @@ The modal includes a focus trap and can be closed by clicking of the close butto
 - bm-react modal can be customized by passing it a js {object} as props.
 - Example with an object named `customProps`:
 
-### `let customProps = {messageText: '<your custom message text'};`
+### `let customProps = {messageText: '<your custom message text>'};`
 
 then
 
