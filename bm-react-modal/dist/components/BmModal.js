@@ -95,6 +95,7 @@ var BmModal = function BmModal(props) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "react-simple-modal-container"
   }, /*#__PURE__*/_react.default.createElement("button", {
+    className: props.openBtnClass ? props.openBtnClass + ' bm-react-modal-open-btn ' : ' bm-react-modal-open-btn ',
     onClick: finalProps.openFunction
   }, finalProps.btnText), finalProps.open ? /*#__PURE__*/_react.default.createElement(_BmModalStructure.default, finalProps) : '');
 };
