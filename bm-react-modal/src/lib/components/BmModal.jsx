@@ -40,6 +40,13 @@ const BmModal = (props) => {
     afterClosefunction: props.afterCloseFunction
       ? props.afterCloseFunction
       : null,
+    afterOpenfunction: props.afterOpenfunction ? props.afterOpenfunction : null,
+    beforeClosefunction: props.beforeCloseFunction
+      ? props.beforeCloseFunction
+      : null,
+    beforeOpenfunction: props.beforeOpenfunction
+      ? props.beforeOpenfunction
+      : null,
     btnText: 'Open Modal',
     backGroundColor: 'rgba(84, 197, 222, 0.4)',
     bodyBackGround: 'blue',
@@ -73,12 +80,6 @@ const BmModal = (props) => {
           </p>
         </div>
       )}
-      {/* <p className='modal-message-text'>
-        {props.messageText
-          ? props.messageText
-          : 'Customize your message with messageText property'
-          }
-      </p> */}
     </div>
   );
 
