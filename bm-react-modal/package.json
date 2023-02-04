@@ -1,11 +1,13 @@
 {
   "name": "bm-react-modal",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": false,
   "keywords": [
     "modal",
     "react"
   ],
+  "description": "A fully customizable React modal component. Developped for educationnal purpose during my training",
+  "author": "Benoit Marechal",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
